@@ -1,0 +1,273 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(44, 1, 233);
+    letter-spacing: 1px;
+font-family: 'Montserrat', sans-serif;
+}
+
+body a {
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+    color: #201dea;
+    text-decoration-color: #201dea;
+    
+}
+.mt-2{
+    color: #201dea;
+}
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus,
+a:hover {
+    text-decoration: none;
+    color: #201dea;
+}
+
+input[type="button"],
+input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    letter-spacing: 1px;
+   font-family: 'Montserrat', sans-serif;
+}
+select,input[type="email"],input[type="text"],input[type=password],
+input[type="button"],input[type="submit"],textarea{
+   font-family: 'Montserrat', sans-serif;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	letter-spacing: 1px;
+	
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+.lft{    text-align: left;}
+.rigt{    text-align: right;}
+/*-- //Reset-Code --*/
+.title {
+    font-size:45px;
+    color: #000;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.wthree-left-right p,.about-jewel-agile-left p,.blog-txt-info p,.addres-office-hour ul li  p,.footer-office-hour p,.footer-office-hour p a,.ser-inner-info p{  
+   font-size: 14px;
+    color: rgb(9, 25, 248);
+    line-height: 28px;}
+.about-jewel-agile-left p,.blog-txt-info p,.bottom-para h6 a,.footer-office-hour p{color:#000;}
+.about-jewel-agile-left h4,.blog-txt-info h4 a,.team-w3layouts-info h4,.addres-office-hour ul li h6,.ser-inner-info h4{
+    font-size: 19px;
+    color:#321dea;
+    text-transform: capitalize;
+}
+.fun-hedder-up h2 {
+    font-size: 26px;
+    line-height: 43px;
+    color: #000;
+    padding: 0em 7em;
+}
+.clr {
+    color: #fff;
+}
+/*-- header --*/
+
+/*-- blog--*/
+
+.blog-txt-info {
+    background: rgb(3, 40, 248);
+    padding: 1em 1em;
+}
+.news-date ul li a {
+    letter-spacing: 2px;
+    color: rgb(68, 0, 255);
+    text-decoration: none;
+    font-weight: 600;
+    font-size:12px;
+}
+.clients-color,.team-shadow {
+box-shadow: 2px 0px 20px 0px #2905f3;
+}
+/*-- //blog--*/
+/*-- count--*/
+.stats{
+    background: url(../images/cc1.jpg)no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+.counter {
+font-size: 23px;
+color: #000;
+font-weight: 500;
+letter-spacing: 1px;
+}
+.stat-info h5,.dance-agile-info h4,.ser-inner-info h4{
+font-size:19px;
+line-height: 33px;
+color:#fff;
+text-transform: uppercase;
+}
+.stats-grid {
+    background: #201dea;
+    padding: 3em 2em;
+    border-radius: 5%;
+}
+/*-- //counter --*/
+/*-- //count--*/
+
+.newsletter input[type="email"] {
+    outline: none;
+    padding: 13px 15px;
+    color: #000;
+    font-size: 14px;
+    width: 80%;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+}
+button.btn1 {
+    width: 20%;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 11.5px 0;
+    font-size: 16px;
+	border:2px solid #000;
+    background:#2b1dea;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.subscrib-w3layouts h2 {
+    color: #000;
+    font-size:38px;
+    text-transform: uppercase;
+}
+.newsletter input::-webkit-input-placeholder { /* Chrome */
+color: #000;
+}
+.newsletter inputl:-ms-input-placeholder { /* IE 10+ */
+color: #000;
+}
+.newsletter input::-moz-placeholder { /* Firefox 19+ */
+color: #000;
+opacity: 1;
+}
+.newsletter input:-moz-placeholder { /* Firefox 4 - 18 */
+color: #000;
+opacity: 1;
+}
+/*--contact --*/
+.contact {
+    background: url(../images/b2.jpg)no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+.addres-office-hour {
+    background: #000;
+    padding: 2em 0em;
+}
+.contact-forms input,.contact-forms textarea {
+    width: 100%;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: .8em .7em;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-radius: 0px;
+    background: transparent!important;
+    outline: none !important;
+}
+.contact-forms textarea {
+resize: none;
+height:8em;
+}
+.contact-forms input::-webkit-input-placeholder,.contact-forms textarea::-webkit-input-placeholder{ /* Chrome */
+color: rgb(0, 0, 0);
+}
+.contact-forms input:-ms-input-placeholder,.contact-forms textarea :-ms-input-placeholder{ /* IE 10+ */
+color: rgb(0, 0, 0);
+}
+.contact-forms input::-moz-placeholder,.contact-forms textarea::-moz-placeholder { /* Firefox 19+ */
+color: rgb(0, 0, 0);
+opacity: 1;
+}
+.contact-forms input:-moz-placeholder,.contact-forms textarea:-moz-placeholder{ /* Firefox 4 - 18 */
+color: rgb(0, 0, 0);
+opacity: 1;
+}
+.sent-butnn button {
+    width: 100%;
+    font-size: 16px;
+    padding: 11px 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top:24px;
+    background: rgb(0, 0, 0);
+	border:2px solid rgb(0, 0, 0);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+/*--//contact --*/
+
+/*--mode--*/
+.modal-body p {
+font-size: 14px;
+color: #000;
+padding: 16px;
+line-height: 27px;
+}
+.modal-header h4 {
+color:#4c00ff;
+text-align: center !important;
+font-size: 35px;
+}
+/*--//mode--*/
