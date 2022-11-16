@@ -65,7 +65,7 @@ session_start();
 	<form method="post">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
 				<div class="container px-4">
-                <a class="navbar-brand" href="#page-top">E-SOMA</a>
+                <a class="navbar-brand" href="index.php">E-SOMA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive"> 
                     <ul class="navbar-nav ms-auto" >
@@ -197,7 +197,30 @@ session_start();
       </div>
     </section>
     <!--//Courses -->
-
+<!-- copyright -->
+  <section class="copyright-usiu-e-soma py-xl-4 py-3" align="center"style="background-color:black">
+		<div class="container" >
+			<p style="color:white;">© 2022 USIU E-Soma. All Rights Reserved</p>
+			<ul class="social-nav footer-social social two text-center mt-2">
+					<li>
+						<a href="#">
+							<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+		</div>
+	</section>
+	<!-- //copyright -->
 	
 </body>
 </html>
