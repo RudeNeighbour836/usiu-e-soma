@@ -40,6 +40,8 @@
    filter: alpha(opacity=0);
    opacity: 0;
 }*/
+
+
 .view-tenth p {
    color: #333;
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";

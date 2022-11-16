@@ -56,7 +56,73 @@ session_start();
     <link href="css/style.css" rel='stylesheet' type='text/css'>
     <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet" />
+	  <link href="css/styles.css" rel="stylesheet" />
+    <style>
+      .show-btn, .containerz{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0,0,0,0.5);
+      }
+      
+      input[type="checkbox"]{
+        display: none;
+      }
+      .containerz{
+        position: fixed;
+        display: none;
+        width: 410px;
+        padding: 30px;
+        box-shadow: black;
+      }
+      #show:checked ~ .containerz{
+        display: block;
+      }
+      .containerz .close-btn{
+        position: fixed;
+        right: 20px;
+        top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .containerz .close-btn:hover{
+        color: #3498db;
+      }
+      .containerz{
+      display: none;
+      background: #fff;
+      width: 410px;
+      padding: 30px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .containerz .text{
+      font-size: 35px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .containerz form{
+      margin-top: -20px;
+    }
+    .containerz form .data{
+      height: 45px;
+      width: 100%;
+      margin: 40px 0;
+    }
+    #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    }  
+    </style>
 	
 </head>
 <body>
@@ -70,7 +136,7 @@ session_start();
                 <div class="collapse navbar-collapse" id="navbarResponsive"> 
                     <ul class="navbar-nav ms-auto" >
 					              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#services">Services</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item"><label class = "nav-link" align="right" for="username">Username</label> </li>
                         <li class="nav-item"><input id="text" type="text" name="user_name" class="form-control"><br><br></li>
@@ -87,7 +153,6 @@ session_start();
 		<script> alert ("Incorrect Username or Password! ")</script>
 	<?php } ?>
 	<!-- Navigation End -->
-    <!-- <img src="images/sst1.jpg" alt="School of Science" width="500" height="300"> -->
 	<header class="bg-primary bg-gradient text-white">
         <div class="container px-4 text-center">
             <h1 class="fw-bolder">USIU E-soma</h1>
@@ -102,8 +167,8 @@ session_start();
             <a class="btn btn-lg btn-light" href="#blog">View Courses</a>
         </div>
     </header>
-    <!-- Header end-->
-
+    <!-- Header end--> 
+         
     <!--Courses -->
     <section class="blog py-lg-4 py-md-3 py-sm-3 py-3" id="blog">
       <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
@@ -117,8 +182,8 @@ session_start();
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>                
+                  <label for="show" class="btn btn-primary">View All</label>
                 </div>
               </div>
             </div>
@@ -131,8 +196,8 @@ session_start();
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>
+                  <label for="show" class="btn btn-primary">View All</label>
                 </div>
               </div>
             </div>
@@ -145,8 +210,8 @@ session_start();
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>
+                  <label for="show" class="btn btn-primary">View All</label>
                 </div>
               </div>
             </div>
@@ -159,8 +224,8 @@ session_start();
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>
+                  <label for="show" class="btn btn-primary">View All</label>
                 </div>
               </div>
             </div>
@@ -173,8 +238,8 @@ session_start();
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>
+                  <label for="show" class="btn btn-primary">View All</label>
                 </div>
               </div>
             </div>
@@ -183,12 +248,12 @@ session_start();
             <div class="">
               <img src="images/graduates.jpg" class="img-fluid" alt="">
               <div class="blog-txt-info">
-                <h4 class="mt-2">School of Graduatdies</h4>
+                <h4 class="mt-2">School of Graduate Studies</h4>
                 <div class="news-date my-3">
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <div class="outs_more-buttn" >
-                  <a href="#" class="btn btn-primary" data-toggle="modal" data-target="" data-blast="bgColor">View All</a>
+                <div>
+                  <label for="show" class="btn btn-primary" onclick="on()">View All</label>
                 </div>
               </div>
             </div>
@@ -197,27 +262,45 @@ session_start();
       </div>
     </section>
     <!--//Courses -->
+    <div class="center">
+         <input type="checkbox" id="show">
+         <div class="containerz" style="background-color:gray">
+            <label for="show" class="close-btn fas fa-times" title="close">X</label>
+            <div class="text">
+               Login
+            </div>
+            <form method="post">
+               <div class="data">
+                  <label>Username</label>
+                  <input id="text" type="text" name="user_name" class="form-control">
+               </div>
+               <div class="data">
+                  <label>Password</label>
+                  <input id="text" type="password" name="password" class="form-control">
+               </div>
+               <div class="btn">
+                  <div class="inner"></div>
+                  <input id="button" type="submit" value="Login" class="btn btn-primary">
+               </div>
+               <div class="signup-link">
+                  Not a member? <a href="signup.php">Signup now</a>
+               </div>
+            </form>
+         </div>
+      </div>
 <!-- copyright -->
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
   <section class="copyright-usiu-e-soma py-xl-4 py-3" align="center"style="background-color:black">
 		<div class="container" >
 			<p style="color:white;">© 2022 USIU E-Soma. All Rights Reserved</p>
-			<ul class="social-nav footer-social social two text-center mt-2">
-					<li>
-						<a href="#">
-							<i class="fab fa-facebook-f" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-twitter" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<i class="fab fa-instagram" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
 		</div>
 	</section>
 	<!-- //copyright -->
